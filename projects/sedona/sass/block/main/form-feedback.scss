@@ -1,0 +1,193 @@
+// стили placeholder`a у кнопок
+/* webkit */
+.section-content input::-webkit-input-placeholder {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+
+  color: $color-placeholder-black;
+  opacity: 1;
+}
+
+/* Firefox 19+ */
+.section-content input::-moz-placeholder {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+
+  color: $color-placeholder-black;
+  opacity: 1;
+}
+
+/* Firefox 18- */
+.section-content input:-moz-placeholder {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+
+  color: $color-placeholder-black;
+  opacity: 1;
+}
+
+/* IE */
+.section-content input:-ms-input-placeholder {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+
+  color: $color-placeholder-black;
+  opacity: 1;
+}
+
+// стили placeholder`a у textarea
+.form-feedback textarea::-webkit-input-placeholder {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+
+  color: $color-placeholder-black;
+  opacity: 1;
+}
+
+/* Firefox 19+ */
+.form-feedback textarea::-moz-placeholder {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+
+  color: $color-placeholder-black;
+  opacity: 1;
+}
+
+/* Firefox 18- */
+.form-feedback textarea:-moz-placeholder {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+
+  color: $color-placeholder-black;
+  opacity: 1;
+}
+
+/* IE */
+.form-feedback textarea:-ms-input-placeholder {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+
+  color: $color-placeholder-black;
+  opacity: 1;
+}
+
+// начинается верстка
+.section {
+  border-top: 1px solid #f2f2f2;
+}
+
+.section__caption {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+// общие стили для label
+.section__label {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.section__input {
+  padding: 15px;
+
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.section__content--font-strong .section__label {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+}
+
+// стили голубой кнопки "отправить отзыв"
+.form-feedback__button {
+  width: 280px;
+  height: 60px;
+  padding: 15px 50px;
+  margin-bottom: 60px;
+}
+
+.form-feedback__remark {
+  display: none;
+}
+
+.section__input:hover,
+.section__input:focus {
+  background: #e5e5e5;
+}
+
+.section__input:active,
+.section__input:focus {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+// переход на планшетную версию сайта осуществляется раньше
+@media (min-width: 650px) {
+  .form-feedback {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 650px;
+    margin: 0 auto;
+  }
+
+  .form-feedback__section--rating {
+    order: -1;
+  }
+
+  .section__caption {
+    font-size: 21px;
+  }
+
+  .section {
+    border: none;
+  }
+
+  .form-feedback__button {
+    width: 325px;
+    margin-top: 30px;
+    margin-left: 25px;
+  }
+
+  .form-feedback__remark {
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: auto;
+
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .form-feedback {
+    width: 960px;
+  }
+
+  .form-feedback__button {
+    width: 440px;
+    margin-left: 0;
+  }
+}

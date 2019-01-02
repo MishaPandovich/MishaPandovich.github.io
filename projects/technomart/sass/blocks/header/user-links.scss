@@ -1,0 +1,68 @@
+.user-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.user-links__item {
+  position: relative;
+  padding: 10px 35px;
+  padding-left: 40px;
+
+  color: #ffffff;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration: none;
+
+  &:hover {
+    background: #212a3a;
+  }
+
+  &:hover .user-links__icon {
+    fill: rgba(255, 255, 255, 1);
+  }
+
+  &:active {
+    background: #161d29;
+    opacity: 0.7;
+  }
+
+  &:active .user-links__icon {
+    fill: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.user-links__item--order {
+  padding: 10px 20px;
+  background: #63a63e;
+
+  &:hover {
+    background: #5fbb2d;
+  }
+
+  &:active {
+    background: #518534;
+  }
+}
+
+.user-links__icon {
+  position: absolute;
+  left: 12px;
+  width: 20px;
+  width: 20px;
+  height: 20px;
+
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+/*активная корзина*/
+.user-links__item--basket-active {
+  background: #ee3643;
+  &:hover {
+    background: #ca2c37;
+  }
+  &:active {
+    background: #ba2732;
+  }
+}

@@ -1,0 +1,136 @@
+.slider {
+  order: -1;
+  position: relative;
+  width: 620px;
+  height: 266px;
+}
+
+.slider__images {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  list-style-type: none;
+  transition: opacity .4s ease-in, visibility .4s ease-in;
+}
+
+.slider__images.loaded {
+  opacity: 1;
+  visibility: visible;
+}
+
+.slider__images-item {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin-top: -16px;
+}
+
+.no-js .slider__images-item:first-of-type {
+  position: relative;
+}
+
+.no-js .slider__images-item:not(:first-of-type) {
+  display: none !important;
+}
+
+.slider__images-image {
+  display: block;
+}
+
+.slider__controls {
+  margin-top: 30px;
+  user-select: none;
+  text-align: center;
+}
+
+.slider__control {
+  display: inline-block;
+  color: #829995;
+  cursor: pointer;
+}
+
+.slider__control--prev {
+  width: 30px;
+  height: 45px;
+  position: absolute;
+  left: 10px;
+  top: 120px;
+  font-size: 0;
+  border: 0;
+  background: transparent;
+}
+
+.slider__control--next {
+  width: 30px;
+  height: 45px;
+  position: absolute;
+  top: 120px;
+  right: 10px;
+  font-size: 0;
+  border: 0;
+  background: transparent;
+}
+
+.slider__pagers {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.slider__pagers li {
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+  width: 5px;
+  height: 5px;
+  background: white;
+  border: 3px solid white;
+  border-radius: 100%;
+  font-size: 0;
+}
+
+.slider__pagers li.active {
+  background: red;
+}
+
+.slider__title {
+  position: absolute;
+  top: -13px;
+  left: 22px;
+
+  font-family: 'Cuprum Bold', 'Arial', sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.slider__text {
+  position: absolute;
+  top: 42px;
+  left: 25px;
+
+  font-family: 'PT Sans', 'Tahoma', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.slider__link {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  padding: 10px 48px;
+  border-radius: 5px;
+}
+
+.slider__icon {
+  width: 30px;
+  height: 45px;
+  fill: #ffffff;
+}

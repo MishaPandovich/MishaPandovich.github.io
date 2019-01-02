@@ -1,0 +1,26 @@
+.modal-map {
+  position: relative;
+  display: none;
+  width: 940px;
+  height: 450px;
+  position: fixed;
+  top: 15%;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  margin: auto;
+
+  box-shadow: 0px 7px 29px 0px #000000;
+}
+
+.modal--show {
+  display: block;
+}
+
+.modal-close--map {
+  display: absolute;
+  z-index: 1;
+  width: 40px;
+  background: transparent;
+}
+

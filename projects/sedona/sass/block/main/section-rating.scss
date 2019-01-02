@@ -1,0 +1,82 @@
+.form-feedback__section--rating {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.section__label--rating {
+  display: inline-block;
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 50px;
+}
+
+.form-feedback__section--rating .section__caption {
+  margin-bottom: 35px;
+}
+
+.section__input--rating {
+  display: none;
+}
+
+.section__input--rating + label::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 56px;
+  height: 56px;
+
+  border-radius: 100%;
+  background: #e5e5e5;
+}
+
+.section__input--rating:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 18px;
+  width: 21px;
+  height: 21px;
+
+  border-radius: 100%;
+  background: #000000;
+}
+
+/*
+.form-filters__input:hover + label,
+.form-filters__input:focus + label {
+    color: #663d15;
+}
+
+.form-filters__input:disabled + label {
+    color: #000000;
+
+    opacity: 0.5;
+}*/
+
+// переход на планшетную версию сайта осуществляется раньше
+@media (min-width: 650px) {
+  .form-feedback__section--rating .section__caption {
+    text-align: left;
+  }
+
+  .form-feedback__section--rating::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -18px;
+    height: 260px;
+    border-right: 1px solid #e6e6e6;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .form-feedback__section--rating {
+    width: 450px;
+  }
+
+  .form-feedback__section--rating::after {
+    right: -13px;
+  }
+}

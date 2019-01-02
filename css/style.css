@@ -137,7 +137,7 @@ body {
 .portfolio__github {
 	position: absolute;
     bottom: 2px;
-	margin-left: 100px;
+	margin-left: 135px;
 	font-size: 0;
 }
 
@@ -146,8 +146,63 @@ body {
     text-decoration: none;
     color: #ba2732;
     font-weight: bold;
+    font-size: 14px;
 }
 
 .portfolio__short-info:hover {
 	color: #ee3643;
+}
+
+.project__add-info {
+	display: none;
+	position: fixed;
+	top: 15%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 1;
+	width: 665px;
+	height: 500px;
+	padding: 5px 25px;
+
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	background: #ffffff;
+}
+
+.modal-show {
+	display: block;
+}
+
+.basic-info__title {
+	font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.basic-info__list {
+	padding: 0;
+    list-style: none;
+    margin-left: 15px;
+}
+
+.basic-info__item::before {
+	content: '- ';
+}
+
+.page-count {
+	margin-bottom: 5px;
+	font-size: 14px;
+    font-weight: bold;
+}
+
+.page-count__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-left: 15px;
+}
+
+.page-count__item::before {
+	content: '- ';
 }

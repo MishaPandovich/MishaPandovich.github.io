@@ -1,0 +1,160 @@
+/*-------------------------------------Мобильная версия------------------------------------------*/
+.nav {
+  order: -1;
+  position: relative;
+}
+
+.nav-list {
+  @include list-style-none;
+  margin-top: -1px;
+
+  background-color: $color-background-blue;
+  box-shadow: 0px -5px 16px -10px #000000 inset;
+}
+
+.nav-list__item {
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
+}
+
+.nav-list__item--hidden {
+  display: none;
+}
+
+.nav-list__link {
+  display: block;
+  padding: 6.5px 0;
+
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  color: $color-font-white;
+}
+
+// кнопка крестик, потом с svg
+.button-mobile__close {
+  display: block;
+  position: absolute;
+  right: 19px;
+  top: 15px;
+  width: 25px;
+  height: 25px;
+}
+
+.button-mobile__close .visually-hidden {
+  display: none;
+}
+
+// реакции ссылок на нажатие
+.nav-list__link:hover {
+  background: #669ec0;
+}
+
+.nav-list__link:active,
+.nav-list__link:visited {
+  background: #5496bd;
+  opacity: 0.7;
+}
+
+/*-------------------------------------Планшетная версия версия----------------------------------------*/
+@media (min-width: $tablet-width) {
+  .nav-list {
+    display: flex;
+    position: relative;
+    padding: 13px 0;
+    margin-left: 6.25%;
+    margin-right: 3%;
+    justify-content: space-between;
+
+    background-color: #ffffff;
+    box-shadow: none;
+    border: none;
+  }
+
+  .nav-list .nav-list__item:nth-child(1) {
+    margin-right: 5%;
+  }
+
+  .nav-list .nav-list__item:nth-child(2) {
+    margin-right: 29.8%;
+  }
+
+  .nav-list .nav-list__item:nth-child(3) {
+    margin-right: 7%;
+  }
+
+  .nav-list__item {
+    border: none;
+  }
+
+  .nav-list__link {
+    padding: 0;
+    font-size: 14px;
+    line-height: 26px;
+    color: $color-font-black;
+  }
+
+  .nav-list__link--active {
+    color: #766357;
+  }
+
+  // убираем крестик из мобильной версии
+  .button-mobile__close {
+    display: none;
+  }
+
+  // реакции ссылок на нажатие
+  .nav-list__link:hover {
+    background: #ffffff;
+    color: #81b3d2;
+  }
+
+  .nav-list__link:active {
+    background: #ffffff;
+    color: #c1c1c1;
+  }
+
+  .nav-list__link--active:hover {
+    color: #604e43;
+  }
+
+  .nav-list__link--avtive:active {
+    background: #ffffff;
+    color: #f2f2f2;
+  }
+}
+
+/*-------------------------------------Десктопная версия версия----------------------------------------*/
+@media (min-width: $desctop-width) {
+  .nav-list {
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 8.5%;
+  }
+
+  .nav-list .nav-list__item:nth-child(1) {
+    margin-right: 9%;
+  }
+
+  .nav-list .nav-list__item:nth-child(2) {
+    margin-right: 31%;
+  }
+
+  .nav-list .nav-list__item:nth-child(3) {
+    margin-right: 7%;
+  }
+
+  .nav-list__item {
+    border: none;
+  }
+
+  .nav-list__item--hidden {
+    display: block;
+    width: 16.25%;
+    margin-left: 7.5%;
+  }
+}

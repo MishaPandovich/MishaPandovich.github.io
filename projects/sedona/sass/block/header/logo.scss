@@ -1,0 +1,74 @@
+.logo {
+  height: 56px;
+  position: relative;
+}
+
+.logo__img {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  width: 105px;
+  height: 70px;
+  top: 0;
+  left: 50%;
+  margin-left: -(105/2) + px;
+}
+
+.toggle-mobile__link {
+  display: block;
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  width: 25px;
+  height: 25px;
+}
+
+.toggle-mobile__link:active {
+  padding: 1px;
+  border: 1px solid #81b3d2;
+  border-radius: 5px;
+}
+
+.toggle-mobile__link .visually-hidden {
+  display: none;
+}
+
+/*-------------------------------------Планшетная версия версия-----------------------------------------*/
+@media (min-width: $tablet-width) {
+  .logo {
+    position: absolute;
+    width: 105px;
+    height: 55px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .logo__img {
+    height: 85px;
+  }
+
+  .img-size {
+    height: 85px;
+  }
+
+  // убираем атрибуты из мобильной версии
+  .toggle-mobile__link {
+    display: none;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .logo__img {
+    width: 190px;
+    height: 95px;
+    margin-left: -(190/2) + px;
+  }
+
+  .img-size {
+    width: 190px;
+    height: 95px;
+  }
+}

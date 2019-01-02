@@ -1,0 +1,29 @@
+.info-goods {
+  margin-top: 60px;
+  padding-bottom: 52px;
+  background: #f2f6f8;
+}
+
+.info-goods__inner {
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+  border: 1px solid transparent;
+}
+
+.info-goods__title {
+  margin-top: 65px;
+  margin-bottom: 30px;
+
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.info-goods__text {
+  font-family: 'PT Sans', 'Tahoma', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}

@@ -1,0 +1,103 @@
+.form-feedback__section--contacts {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.section__label--contacts {
+  margin-left: 20px;
+  margin-bottom: 13px;
+}
+
+.section__input--contacts {
+  position: relative;
+  width: 89%;
+  margin-bottom: 19px;
+
+  background: #f2f2f2 url("../img/icon-mail.svg") no-repeat;
+  background-size: 20px;
+  background-position: 95% 45%;
+}
+
+.section__input--phone {
+  background: #f2f2f2 url("../img/icon-phone.svg") no-repeat;
+  background-position: 95% 45%;
+}
+
+.section__content--contacts .section__input--contacts:nth-last-child(1) {
+  margin-bottom: 27px;
+}
+
+// переход на планшетную версию сайта осуществляется раньше
+@media (min-width: 650px) {
+  .form-feedback__section--contacts {
+    width: 93%;
+    margin-top: 30px;
+  }
+
+  .form-feedback__section--contacts .section__caption {
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  .form-feedback__section--contacts .section__caption::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 130px;
+    border-top: 1px solid #e6e6e6;
+  }
+
+  .form-feedback__section--contacts .section__caption::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 130px;
+    border-top: 1px solid #e6e6e6;
+  }
+
+  .section__input--contacts {
+    width: 95%;
+  }
+}
+
+
+@media (min-width: $desctop-width) {
+  .form-feedback__section--contacts {
+    width: 100%;
+  }
+
+  .section__label--contacts{
+    margin-left: 0;
+    margin-right: 19px;
+  }
+
+  .section__label--phone span {
+    display: none;
+  }
+
+  .section__label--phone::before {
+    content: "Телефон*:";
+  }
+
+  .section__input--contacts {
+    width: 275px;
+  }
+
+  .section__input--phone {
+    margin-right: 80px;
+  }
+
+  .form-feedback__section--contacts .section__caption {
+    margin-bottom: 75px;
+  }
+
+  .form-feedback__section--contacts .section__caption::before {
+    width: 290px;
+  }
+
+  .form-feedback__section--contacts .section__caption::after {
+    width: 290px;
+  }
+}

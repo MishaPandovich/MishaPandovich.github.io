@@ -5,6 +5,7 @@
   <title>Техномарт</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/min_style.css">
+  <link rel="stylesheet" href="css/slider.css">
   <script src="js/min_polyfill_svg.js"></script>
   <script>svg4everybody();</script>
   <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
@@ -88,34 +89,33 @@
           <a class="promo__link" href="#">бесплатно</a>
           <svg class="promo__icon"><use xlink:href="img/sprite.svg#promo-5-icon"></use></svg>
         </div>
-        <section class="slider promo__slider">
-          <figure class="slider__slide">
-            <img class="slider__img" src="img/slide1.jpg" width="620" height="265" alt="слайд: Перфораторы - настоящие мужские игрушки">
-            <div class="slider__content">
-              <p class="slider__title">Перфораторы</p>
-              <p class="slider__text">Настоящие мужские игрушки</p>
-              <a class="btn slider__link" href="catalog.html">Открыть каталог</a>
-            </div>
-          </figure>
-          <figure class="slider__slide slider__slide--active">
-            <img class="slider__img" src="img/slide2.jpg" width="620" height="265" alt="слайд: Перфораторы - настоящие мужские игрушки">
-            <div class="slider__content">
-              <p class="slider__title">Дрели</p>
-              <p class="slider__text">Соседям на радость!</p>
-              <a class="btn slider__link" href="catalog.html">Открыть каталог</a>
-            </div>
-          </figure>
-          <div class="slider__toggles">
-            <span class="slider__toggle">1</span>
-            <span class="slider__toggle slider__toggle--active">2</span>
+        <div class="slider">
+          <ul class="js__slider__images slider__images">
+            <li class="slider__images-item"><img class="slider__images-image" src="img/slide1.jpg" />
+              <div class="slider__content">
+                <p class="slider__title">Перфораторы</p>
+                <p class="slider__text">Настоящие мужские игрушки</p>
+                <a class="btn slider__link" href="catalog.html">Открыть каталог</a>
+              </div>
+            </li>
+            <li class="slider__images-item"><img class="slider__images-image" src="img/slide2.jpg" />
+              <div class="slider__content">
+                <p class="slider__title">Дрели</p>
+                <p class="slider__text">Соседям на радость!</p>
+                <a class="btn slider__link" href="catalog.html">Открыть каталог</a>
+              </div>
+            </li>
+          </ul>
+          <div class="slider__controls">
+            <button class="slider__control js__slider__control--prev slider__control--prev">Prev
+              <svg class="slider__icon"><use xlink:href="img/sprite.svg#button-prev"></use></svg>
+            </button>
+            <ol class="js__slider__pagers slider__pagers"></ol>
+            <button class="slider__control js__slider__control--next slider__control--next">Next
+              <svg class="slider__icon"><use xlink:href="img/sprite.svg#button-next"></use></svg>
+            </button>
           </div>
-          <button class="slider__btn slider__next">Вперед
-            <svg class="slider__icon"><use xlink:href="img/sprite.svg#button-next"></use></svg>
-          </button>
-          <button class="slider__btn slider__prev">Назад
-            <svg class="slider__icon"><use xlink:href="img/sprite.svg#button-prev"></use></svg>
-          </button>
-        </section>
+        </div>
       </div>
     </section>
     <section class="popular-goods">
@@ -354,5 +354,8 @@
   <script type="text/javascript" src="js/min_popup_order.js"></script>
   <script type="text/javascript" src="js/min_yandex_map.js"></script>
   <script type="text/javascript" src="js/min_toggles_services.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+  <script  src="js/slider.js"></script>
 </body>
 </html>

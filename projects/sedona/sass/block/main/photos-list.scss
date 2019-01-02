@@ -1,0 +1,260 @@
+.photos-list {
+  @include list-style-none;
+}
+
+.photo-list__item {
+  width: auto;
+  padding: 6.25%;
+
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+
+  border-top: 1px solid #e5e5e5;
+}
+
+.photos-list .photo-list__item:nth-last-child(1) {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.photo-list__img {
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+}
+
+.photo-list__img--sunset {
+  background: url(../img/photo-sunset-mobile@1x.jpg) no-repeat;
+}
+
+.photo-list__img--cactus {
+  background: url(../img/photo-cactus-mobile@1x.jpg) no-repeat;
+}
+
+.photo-list__img--roads {
+  background: url(../img/photo-roads-mobile@1x.jpg) no-repeat;
+}
+
+.photo-list__img--bridge {
+  background: url(../img/photo-bridge-mobile@1x.jpg) no-repeat;
+}
+
+.wrapper {
+  width: 280px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 10px;
+}
+
+.photo-list__caption {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.subcaption {
+  margin-top: 0;
+
+  font-family: "PT Sans", sans-serif;
+}
+
+.likes {
+  margin-left: 30px;
+}
+
+.likes::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  bottom: -3px;
+  left: 3px;
+
+  background: url("../img/icon-like.svg") no-repeat;
+}
+
+@media (min-width: 600px) {
+  .photo-list__img {
+    width: 324px;
+    height: 267px;
+  }
+
+  .photo-list__img--sunset {
+    background: url(../img/photo-sunset-desktop@1x.jpg) no-repeat center center;
+  }
+
+  .photo-list__img--cactus {
+    background: url(../img/photo-cactus-tablet@1x.jpg) no-repeat;
+  }
+
+  .photo-list__img--roads {
+    background: url(../img/photo-roads-tablet@1x.jpg) no-repeat;
+  }
+
+  .photo-list__img--bridge {
+    background: url(../img/photo-bridge-tablet@1x.jpg) no-repeat;
+  }
+
+  .wrapper {
+    width: 304px;
+    padding-left: 20px;
+    background: #f2f2f2;
+  }
+
+  .likes::before {
+    bottom: -3px;
+    left: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-photo {
+    padding: 0 7.8%;
+  }
+
+  .photos-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .photo-list__item {
+    width: 324px;
+    height: 346px;
+    padding: 0;
+
+    background: #f2f2f2;
+  }
+
+  .photos-list .photo-list__item:nth-child(3n) {
+    background: #eaeaea;
+  }
+
+  .photo-list__img {
+    width: 324px;
+    height: 267px;
+  }
+
+  .photo-list__item--big {
+    width: 100%;
+    height: 480px;
+    flex-grow: 1;
+  }
+
+  .photo-list__img--sunset {
+    width: 100%;
+    height: 400px;
+    background: url(../img/photo-sunset-desktop@1x.jpg) no-repeat;
+  }
+
+  .wrapper {
+    width: 280px;
+    padding-left: 0;
+    background: none;
+  }
+
+  .photo-list__item--big .wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .likes {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    margin-left: 0;
+  }
+
+  .likes::before {
+    top: 0px;
+    left: -30px;
+  }
+}
+
+@media (min-width: 1156px) {
+  .page-photo {
+    padding: 0;
+  }
+
+  .photo-list__item {
+    position: relative;
+    width: 400px;
+    height: 267px;
+    background: none;
+  }
+
+  .photo-list__item--big {
+    width: 100%;
+    height: 400px;
+    flex-grow: 1;
+  }
+
+  .photo-list__img {
+    width: 400px;
+    height: 267px;
+  }
+
+  // закрывает щель между блоками
+  .photos-list .photo-list__item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2px;
+    width: 100%;
+    height: 2px;
+    background: black;
+    opacity: 0.6;
+  }
+
+   .photos-list .photo-list__item--big::before {
+    background: none;
+  }
+
+  .photo-list__img--sunset {
+    width: 100%;
+    height: 400px;
+  }
+
+  .photo-list__img--cactus {
+    background: url(../img/photo-cactus-desktop@1x.jpg) no-repeat;
+  }
+
+  .photo-list__img--roads {
+    background: url(../img/photo-roads-desktop@1x.jpg) no-repeat;
+  }
+
+  .photo-list__img--bridge {
+    background: url(../img/photo-bridge-desktop@1x.jpg) no-repeat;
+  }
+
+  .wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    color: #ffffff;
+    background: none;
+    background: rgba(0, 0, 0, 0.302);
+  }
+
+  .photo-list__item--big .wrapper {
+    width: 100%;
+  }
+
+  .photo-list__caption {
+    margin-left: 30px;
+  }
+
+  .subcaption {
+    margin-left: 30px;
+  }
+
+  .photo-list__item a:hover ~ .wrapper {
+    display: none;
+  }
+
+  .likes::before {
+    background: url("../img/icon-like-desctop.svg") no-repeat;
+  }
+}
