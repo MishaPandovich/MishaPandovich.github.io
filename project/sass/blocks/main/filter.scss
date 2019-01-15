@@ -1,0 +1,281 @@
+/*иконка открытия фильтра*/
+.filter__toggle {
+	font-size: 0;
+	border: none;
+
+	position: fixed;
+    top: 70%;
+   	right: 4%;
+   	z-index: 3;
+   	width: 48px;
+	height: 48px;
+
+	border-radius: 100%;
+	background: #D62323;
+	box-shadow: 0px 7px 20px -3px #000000;
+	cursor: pointer;
+}
+
+.filter__icon {
+	width: 15px;
+	height: 16px;
+}
+/*иконка открытия фильтра*/
+.filter-form {
+	display: none;
+	position: absolute;
+	z-index: 5;
+    width: 100%;
+    height: 25%;
+}
+
+.filter-form--show {
+	display: block;
+}
+
+.filter-form__inner {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    bottom: 0px;
+    z-index: 3;
+
+    width: 100%;
+    height: 60%;
+
+    overflow-y: scroll;
+    background: white;
+}
+
+.filter-blur {
+	position: absolute;
+    bottom: 0px;
+    z-index: 3;
+    
+    width: 100%;
+    height: 10%;
+  
+    -webkit-filter: blur(6px);
+    filter: blur(6px);
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.filter__btns {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	padding: 10% 0;
+	padding-bottom: 12%;
+}
+
+.input-btn {
+	text-align: center;
+    margin-bottom: 7%;
+}
+/*стилизация кнопки*/
+.input-btn__input {
+	display: none;
+}
+
+.input-btn__label {
+	position: relative;
+
+	font-family: TTNorms, sans-serif;
+	line-height: normal;
+	font-size: 1.125em;
+	font-weight: bold;
+	color: #333333;
+	cursor: pointer;
+}
+
+.input-btn__item-count {
+	position: absolute;
+	top: -5px;
+	right: -10px;
+	
+	font-size: 0.75em;
+	color: #999999;
+}
+
+.input-btn__input:checked + .input-btn__label {
+  color: #D62323;
+}
+
+.input-btn__input:checked + .input-btn__label span {
+  color: #D62323;
+}
+
+@media (min-width: 1200px) {
+	.filter__toggle {
+		display: none;
+	}	
+
+	.filter-form {
+		display: block;
+		position: relative;
+    	height: 80px;
+
+    	background: none;
+
+    	&::after {
+			content: "";
+			position: absolute;
+		    bottom: 0;
+		    left: 0;
+
+			display: block;
+			width: 100%;
+			height: 1px;
+			background: #E8EAED;
+    	}
+	}
+	
+	.filter-form__inner {
+		position: relative;
+	    top: 0px;
+	    height: 100%;
+
+	    margin: 0;
+	    padding: 0;
+
+	    overflow: hidden;
+	    background: none;
+	}
+/*подложка для скрытия scrollbar*/
+	.filter-form__inner::before {
+		content: "";
+	    width: 100%;
+	    height: 20px;
+	    position: absolute;
+	    top: 0;
+	    z-index: 3;
+
+	    background: #ffffff;
+	}
+/*фон размытия справой стороны*/
+	.filter-form__inner::after {
+		content: "";
+	    position: absolute;
+	    bottom: 0px;
+	    right: 0;
+	    z-index: 3;
+
+	    width: 10%;
+	    height: 100%;
+
+	    -webkit-filter: blur(6px);
+	    filter: blur(6px);
+	    background: rgba(255, 255, 255, 0.7);
+	}
+
+
+	.filter__btns {
+		position: absolute;
+	   	padding-right: 21px;
+    	width: 58px;
+ 		height: 1200px;
+    
+	    overflow-y: auto;
+	    overflow-x: hidden;
+	    transform: rotate(-90deg);
+	    transform-origin: right top;
+    
+        margin-left: -8%;
+        padding-top: 6.5%;
+		
+		cursor: pointer;
+	}
+	
+	.input-btn {
+		display: block;
+	    margin-top: 90px;
+    	margin-bottom: 90px;
+	    margin-left: 13px;
+
+	    transform: rotate(90deg);
+	    transform-origin: right top;
+	}
+
+	.input-btn:nth-child(1) {
+		margin-bottom: 135px;
+	}
+	
+	.input-btn:nth-last-child(1) {
+		margin-bottom: 390px;
+	}
+	
+	.input-btn__label {
+		font-family: TTNorms, sans-serif;
+		line-height: normal;
+		font-size: 18px;
+		color: #333333;
+		cursor: pointer;
+	}
+
+	.input-btn__input:checked + .input-btn__label {
+		position: relative;
+	}
+
+	.input-btn__input:checked + .input-btn__label::after {
+		content: "";
+	    position: absolute;
+	    z-index: 3;
+	    display: block;
+	    width: 30px;
+	    bottom: -21px;
+	    left: 22px;
+	    height: 3px;
+	    background: red;
+	}
+
+	.input-btn:nth-child(1) .input-btn__input:checked + .input-btn__label::after {
+		content: "";
+	    position: absolute;
+	    z-index: 3;
+	    display: block;
+	    width: 30px;
+	    bottom: -21px;
+	    left: 38px;
+	    height: 3px;
+	    background: red;
+	}
+
+	.input-btn__input:checked + .input-btn__label span {
+	  color: #D62323;
+	}
+
+	.input-btn__item-count {
+		position: absolute;
+		top: -5px;
+    	right: -10px;
+		
+		font-size: 12px;
+		color: #999999;
+	}
+
+	.filter-blur {
+		display: none;
+	}
+}
+
+@media (min-width: 1600px) {
+	.filter__btns {
+		padding-right: 14px;
+    	padding-top: 10.5%;
+    	height: 1580px;
+	}
+
+	.filter-form::after {
+	    content: "";
+	    bottom: 6px;
+	}
+
+	.filter-form__inner::after {
+	    content: "";
+	    bottom: 15px;
+	}
+
+	.input-btn:nth-last-child(1) {
+		margin-bottom: 470px;
+	}
+}
