@@ -1,0 +1,88 @@
+.modal-basket {
+  display: none;
+  width: 620px;
+  position: fixed;
+  top: 25%;
+  left: 0;
+  right: 0;
+  z-index: 6;
+  margin: auto;
+
+  border-top: 6px solid red;
+  background: #f4f4f4;
+  box-shadow: 0px 7px 29px 0px #000000;
+}
+
+.modal--show {
+  display: block;
+}
+
+.modal-basket__title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  padding: 68px 0;
+  padding-left: 177px;
+
+  background: #ffffff;
+}
+
+.modal-basket__link {
+  display: inline-block;
+  margin: 25px 0;
+  margin-bottom: 35px;
+  padding: 10px 60px;
+  border-radius: 3px;
+
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  vertical-align: center;
+
+  margin-right: 20px;
+  color: #000000;
+  background: #ffffff;
+}
+
+.modal-basket__link--buy {
+  margin-left: 80px;
+  color: #ffffff;
+  background: #ee3643;
+}
+
+.modal-basket__link--next-buy {
+  &:hover {
+    color: #ee3643;
+  }
+
+  &:active {
+    color: #000000;
+    opacity: 0.7;
+  }
+}
+
+.modal-basket__wrapper-icon {
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 85px;
+  z-index: 6;
+
+  width: 67px;
+  height: 67px;
+  background: #63a63e;
+  border-radius: 100%;
+}
+
+.modal-basket__icon {
+  margin-top: 15px;
+  margin-left: 8px;
+  width: 50px;
+  height: 45px;
+  fill: #ffffff;
+}

@@ -1,56 +1,89 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>test</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Портфолио</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 </head>
 <body>
-	<div class="catalog-card">
-
-	</div>
-
-	<div class="catalog-card-order">
-
-	</div>
-
-
-	<template id="card">
-    <article class="catalog__card card card--in-stock" tabindex="0">
-      <header class="card__header">
-        <h3 class="card__title">Чесночные сливки</h3>
-        <img class="card__img" src="img/cards/ice-garlic.jpg" alt="Мороженное со вкусом чеснока" width="165" height="164">
-        <span class="card__price">230 <span class="card__currency">₽</span><span class="card__weight">/ 70 Г</span></span>
-      </header>
-      <div class="card__main">
-        <p class="card__btns-wrap">
-          <a class="card__btn" href="#">Добавить +1</a>
-        </p>
-      </div>
-    </article>
-  </template>
-
-  <template id="card-order">
-    <article class="goods_card card-order">
-      <a href="#" class="card-order__close">Удалить товар</a>
-      <header class="card-order__header">
-        <h3 class="card-order__title">Нинзя-удар васаби</h3>
-        <img src="img/gum-wasabi.jpg" alt="Жевачка со вкусом васаби" class="card-order__img" width="165" height="164">
-      </header>
-      <div class="card-order__main">
-        <p class="card-order__price">660 ₽</p>
-        <div class="card-order__amount">
-          <button type="button" class="card-order__btn card-order__btn--decrease">уменьшить</button>
-          <label class="card-order__label">
-            <span class="visually-hidden">Количество</span>
-            <input class="card-order__count" name="gum-wasabi" value="2" type="text" id="card-order__gum-wasabi">
-          </label>
-          <button type="button" class="card-order__btn card-order__btn--increase">увеличить</button>
-        </div>
-      </div>
-    </article>
-  </template>
-	<script src="catalog.js"></script>
-	<script src="order.js"></script>
+	<header class="header">
+		<h1 class="header__title">Портфолио</h1>
+	</header>
+	<main class="main">
+		<section class="about-us">
+			<h2 class="about-us__title">О себе:</h2>
+			<img class="about-us__img" src="img/userpic.jpg" alt="фото">
+			<p class="about-us__name">Лобода Виктория Юрьевна</p>
+			<p class="about-us__age">22 года</p>
+			<p class="about-us__contacts about-us__phone">
+				<img src="img/phone.png" width="30px" height="30px">
+				Контактный телефон:<br>
+				<a href="tel://+79817504951">+7(981)-750-49-51</a>
+			</p>
+			<p class="about-us__contacts about-us__email">
+				<img src="img/email.png" width="30px" height="30px">
+				Электронная почта:<br>
+				<a href="mailto:MishaPandovich@yandex.ru">MishaPandovich@yandex.ru</a>
+			</p>
+			<p class="about-us__contacts about-us__github">
+				<img src="img/github-logo.jpg" width="37px" height="37px">
+				Ссылка на гитхаб:<br>
+				<a href="https://github.com/MishaPandovich">https://github.com/MishaPandovich</a>
+			</p>
+			<p class="about-us__skills">
+				Знаю CSS, HTML, основы JS.<br>
+				Знакома с Github, SVG, БЭМ, Gulp и Sass.
+			</p>
+			<p>Опыт работы: нету</p>
+		</section>
+		<section class="portfolio">
+			<h2 class="portfolio__title">Работы:</h2>
+			<ul class="portfolio__list">
+				<li class="portfolio__item">
+					<a class="portfolio__link" href="projects/technomart/index.html" target="_blank"><img src="img/technomart.jpg" width="330" height="450"></a>
+					<a class="portfolio__short-info" href="info-1.html" target="_blank">Крат. информация</a>
+					<a class="portfolio__github" href="https://github.com/MishaPandovich/347523-technomart" title="ссылка на проект в гитхабе" target="_blank">Гитхаб
+						<img src="img/github-logo.jpg" width="30px" height="30px">
+					</a>
+				</li>
+				<li class="portfolio__item">
+					<a class="portfolio__link" href="projects/barbershop/index.html" target="_blank"><img src="img/barbershop.jpg" width="330" height="450"></a>
+					<a class="portfolio__short-info" href="info-2.html" target="_blank">Крат. информация</a>
+					<a class="portfolio__github" href="https://github.com/MishaPandovich/Barbershop-fixed" title="ссылка на проект в гитхабе" target="_blank">Гитхаб
+						<img src="img/github-logo.jpg" width="30px" height="30px">
+					</a>
+				</li>
+				<li class="portfolio__item">
+					<a class="portfolio__link" href="projects/glasy/index.html" target="_blank"><img src="img/gllacy.jpg" width="330" height="450"></a>
+					<a class="portfolio__short-info" href="info-3.html" target="_blank">Крат. информация</a>
+					<a class="portfolio__github" href="https://github.com/MishaPandovich/Gllacy" title="ссылка на проект в гитхабе" target="_blank">Гитхаб
+						<img src="img/github-logo.jpg" width="30px" height="30px">
+					</a>
+				</li>
+				<li class="portfolio__item">
+					<a class="portfolio__link" href="projects/nerds/index.html" target="_blank"><img src="img/nerds.jpg" width="330" height="450"></a>
+					<a class="portfolio__short-info" href="info-4.html" target="_blank">Крат. информация</a>
+					<a class="portfolio__github" href="https://github.com/MishaPandovich/Nerds" title="ссылка на проект в гитхабе" target="_blank">Гитхаб
+						<img src="img/github-logo.jpg" width="30px" height="30px">
+					</a>
+				</li>
+				<li class="portfolio__item">
+					<a class="portfolio__link" href="projects/sedona/index.html" target="_blank"><img src="img/sedona.jpg" width="330" height="450"></a>
+					<a class="portfolio__short-info" href="info-5.html" target="_blank">Крат. информация</a>
+					<a class="portfolio__github" href="https://github.com/MishaPandovich/Sedona-adaptive" title="ссылка на проект в гитхабе" target="_blank">Гитхаб
+						<img src="img/github-logo.jpg" width="30px" height="30px">
+					</a>
+				</li>
+				<li class="portfolio__item">
+					<a class="portfolio__link" href="projects/project/index.html" target="_blank"><img src="img/test.jpg" width="330" height="450"></a>
+					<a class="portfolio__github" href="https://github.com/MishaPandovich/test-its.agency/tree/branch1" title="ссылка на проект в гитхабе" target="_blank">Гитхаб
+						<img src="img/github-logo.jpg" width="30px" height="30px">
+					</a>
+				</li>
+			</ul>
+			<!--<a href="projects/project/index.html">test</a>-->
+		</section>
+	</main>
 </body>
 </html>

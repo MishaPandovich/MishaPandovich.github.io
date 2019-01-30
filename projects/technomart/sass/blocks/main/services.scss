@@ -1,0 +1,155 @@
+.services {
+  width: 100%;
+  min-width: 1200px;
+
+  background: #f4f8fa;
+  margin-top: 80px;
+}
+
+.services__wrapper {
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+
+  border: 1px solid transparent;
+}
+
+.services__title {
+  margin-top: 65px;
+  margin-bottom: 30px;
+
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.services__text {
+  width: 400px;
+
+  font-family: 'PT Sans', 'Tahoma', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.services__list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  width: 240px;
+  margin-top: 69px;
+  margin-bottom: 100px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: -35px;
+    right: 0;
+    height: 300px;
+    width: 10px;
+    background: url(../img/line.png) no-repeat;
+  }
+}
+
+.services__link {
+  display: block;
+  padding: 15px;
+  padding-left: 22px;
+
+  font-family: 'Cuprum Bold', 'Arial', sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #ffffff;
+  background: #32425c;
+  border-bottom: 1px solid #4d637b;
+
+  &:nth-last-child(1) {
+    border-bottom: 0;
+  }
+
+  &:hover {
+    background: #293449;
+  }
+
+  &--active {
+    color: #4d637b;
+    background: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    cursor: default;
+
+    &:hover {
+      background: #ffffff;
+    }
+  }
+}
+
+.services-popup {
+  display: none;
+
+  position: absolute;
+  top: -5px;
+  left: 320px;
+  height: 285px;
+  width: 620px;
+}
+
+.services-popup--active {
+  display: block;
+}
+
+.services-popup--delivery {
+  background: url(../img/services-1.png) no-repeat;
+  background-position: 100% 100%;
+
+  & .services-popup__text {
+    width: 278px;
+  }
+}
+
+.services-popup--guarantee {
+  background: url(../img/services-2.png) no-repeat;
+  background-position: 100% 100%;
+
+  & .services-popup__text {
+    width: 381px;
+  }
+}
+
+.services-popup--loan {
+  background: url(../img/services-3.png) no-repeat;
+  background-position: 100% 100%;
+
+  & .services-popup__text {
+    width: 295px;
+  }
+
+  & .services-popup__link {
+    display: inline-block;
+    padding: 10px 50px;
+    border-radius: 3px;
+    margin-top: 15px;
+    vertical-align: center;
+  }
+}
+
+.services-popup__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-family: 'Cuprum Bold', 'Arial', sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.services-popup__text {
+  font-family: 'PT Sans', 'Tahoma', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}

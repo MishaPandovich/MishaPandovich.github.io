@@ -1,0 +1,48 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  background: #ffffff;
+}
+
+.btn {
+  color: #ffffff;
+  background: #ee3643;
+
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    background: #ca2c37;
+  }
+
+  &:active {
+    background: #ba2732;
+  }
+}
+
+.icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+
+.modal {
+  display: none;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.column-center {
+  width: 940px;
+  margin: 0 auto;
+}

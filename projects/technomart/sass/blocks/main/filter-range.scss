@@ -1,0 +1,74 @@
+.range-controls {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  width: 220px;
+  height: 80px;
+
+  background: #f7f3ec;
+  border-radius: 3px;
+}
+
+.scale {
+  position: relative;
+  top: 39px;
+  left: 20px;
+  width: 180px;
+  height: 2px;
+  background: #d7dcde;
+}
+
+.bar {
+  width: 160px;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  top: -11px;
+}
+
+.range-toggle-max {
+  top: -11px;
+  right: 20px;
+}
+
+.price-controls__input {
+  width: 95px;
+  padding: 10px 0;
+
+  font-family: 'PT Sans', 'Tahoma', sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+
+  border: none;
+  background: #f7f3ec;
+  border-radius: 3px;
+}
+
+.price-controls__input--min {
+  margin-right: 25px;
+}
+
+.min-price::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+
+  background: #000000;
+}

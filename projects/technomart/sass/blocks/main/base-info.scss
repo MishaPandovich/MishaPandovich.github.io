@@ -1,0 +1,31 @@
+.base-info {
+  min-width: 1200px;
+  margin: 0 auto;
+}
+
+.base-info__column-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 0 10px;
+  padding-bottom: 87px;
+  margin-top: 45px;
+}
+
+.info-title {
+  margin-bottom: 25px;
+
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.info-text {
+  margin-bottom: 25px;
+
+  font-family: 'PT Sans', 'Tahoma', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}

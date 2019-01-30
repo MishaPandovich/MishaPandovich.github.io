@@ -1,0 +1,127 @@
+/*promo*/
+.promo {
+  min-width: 1200px;
+  margin: 0 auto;
+}
+
+.promo__column-center {
+  padding: 0 10px;
+  margin-top: 57px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.promo__block {
+  position: relative;
+
+  width: 300px;
+  height: 125px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  /*нумерация сделана для того, чтобы вставка одинаковых элементов не ломала сетку*/
+  &:nth-child(1) {
+    order: -4;
+  }
+
+  &--theme-material {
+    background: #ffbf47;
+  }
+
+  &:nth-child(2) {
+    order: -3;
+  }
+
+  &--theme-tool {
+    background: #3bbce3;
+  }
+
+  &:nth-child(2) {
+    order: -2;
+  }
+
+  &--theme-technic {
+    order: -2;
+    background: #dc91d8;
+  }
+
+  &--theme-discount {
+    background: #8ed78f;
+  }
+
+  &--theme-delivery {
+    background: #ffc047;
+  }
+}
+
+.promo__block:nth-child(1) {
+  margin-left: 0;
+}
+
+.promo__block:nth-child(5) {
+  position: absolute;
+  right: 10px;
+  top: 287px;
+}
+
+.promo__icon {
+  position: absolute;
+  right: 15px;
+  top: 35px;
+  width: 90px;
+  height: 70px;
+
+  fill: #ffffff;
+}
+
+.promo__block--theme-material .promo__icon{
+  right: 0;
+}
+
+.promo__block--theme-discount .promo__icon{
+  top: 25px;
+}
+
+.promo__title {
+  margin-left: 22px;
+  margin-bottom: 10px;
+
+  font-family: 'Cuprum Bold', 'Arial', sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.promo__link {
+  display: block;
+  width: 136px;
+  padding: 10px 0;
+  margin-left: 20px;
+  box-sizing: border-box;
+
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+
+  font-family: 'Cuprum Bold', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+
+/*расположение слайдера*/
+.promo__slider {
+  order: -1;
+}
+
+

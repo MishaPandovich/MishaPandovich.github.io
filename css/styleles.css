@@ -1,0 +1,45 @@
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.project__add-info {
+	border: 1px solid #eeeeee;
+    padding: 0 30px;
+}
+
+.project__title {
+	font-size: 30px;
+    color: #ee3643;
+}
+
+.basic-info__title {
+	font-size: 19px;
+    margin-top: -15px;
+}
+
+.basic-info__list {
+	margin-top: -15px;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.page-count {
+	font-size: 19px;
+}
+
+.page-count__list {
+	margin-top: -15px;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.modal-windows {
+	font-size: 19px;
+}
+
+.modal-windows__list {
+	margin-top: -15px;
+    font-size: 17px;
+    line-height: 25px;
+}
